@@ -1,0 +1,31 @@
+# Dependencias y builds
+node_modules/
+build/
+dist/
+coverage/
+server.js
+
+# Sistema, logs y temporales
+.DS_Store
+Thumbs.db
+*.log
+__pycache__/
+*.pyc
+
+# Secretos
+.env*
+!.env.example
+
+# Bibliotecas de samples: pesadas y de terceros. Se bajan de su fuente (ver sound-libraries/README.md).
+# Algunas son comerciales y no se pueden redistribuir.
+sound-libraries/*
+!sound-libraries/README.md
+
+# Salida renderizada (audio, MIDI, stems): se regenera con el renderizador.
+exports/
+
+# Composiciones guardadas por la API: son de cada usuario.
+data/compositions/
+
+# Capturas temporales del navegador de pruebas
+.playwright-mcp/
